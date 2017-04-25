@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" stylesheets="@jmetro.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stnetix.toDoApp.controllers.MainController">
+   <children>
+      <StackPane prefHeight="80.0" prefWidth="200.0" styleClass="background">
+         <children>
+            <fx:include source="header.fxml" />
+         </children>
+      </StackPane>
+      <StackPane prefHeight="150.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <fx:include source="tasksList.fxml" />
+         </children>
+      </StackPane>
+      <StackPane prefHeight="80.0" prefWidth="200.0" styleClass="background">
+         <children>
+            <fx:include source="control.fxml" />
+         </children>
+      </StackPane>
+   </children>
+</VBox>

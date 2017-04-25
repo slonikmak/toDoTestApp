@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="taskContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="380.0" styleClass="task-container" stylesheets="@jmetro.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stnetix.toDoApp.controllers.TaskController">
+   <children>
+      <Label fx:id="taskHeader" layoutX="14.0" layoutY="14.0" styleClass="item-title" text="Task name" />
+      <Label layoutX="14.0" layoutY="49.0" text="Status:" />
+      <Label fx:id="taskStatus" layoutX="57.0" layoutY="49.0" text="active" />
+      <Button layoutX="250.0" layoutY="26.0" mnemonicParsing="false" onAction="#deleteTask" text="Delete task" />
+      <CheckBox fx:id="complitedCheckBox" layoutX="161.0" layoutY="30.0" mnemonicParsing="false" text="Completed" />
+   </children>
+</AnchorPane>
